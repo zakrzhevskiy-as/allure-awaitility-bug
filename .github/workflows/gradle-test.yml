@@ -37,15 +37,15 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew test
 
-   # - name: Allure report
+    - name: Allure report
     # You may pin to the exact commit or the version.
     # uses: afiore/action-allure-report@e43ebd6f4f4c74b07b1eb02f042902bbe6786a19
-    #  uses: afiore/action-allure-report@v0.1.0
-     # with:
+      uses: afiore/action-allure-report@v0.1.0
+      with:
         # Allure test result data dir
-      #  results-dir: ./build/allure-results
+        results-dir: ./build/allure-results
         # Allure report target dir
-       # report-dir: ./build/allure-report
+        report-dir: ./build/allure-report
           
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
