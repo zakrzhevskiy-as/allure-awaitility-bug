@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Fri Oct 11 14:24:21 GMT 2024","Fri Oct 11 14:24:31 GMT 2024","10079","","com.example.AllureAwaitilityTest","","com.example.AllureAwaitilityTest","stepsShouldAppearAfterAwaitility","stepsShouldAppearAfterAwaitility()",""
