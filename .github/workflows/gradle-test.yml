@@ -53,14 +53,14 @@ jobs:
         allure_results: build/allure-results
         allure_report: build/allure-report
         allure_history: build/allure-history
-        
+
     - name: Deploy report to Github Pages
       if: always()
       uses: peaceiris/actions-github-pages@v3.1.12
       env:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       with:
-        deploy_key: ${{ secrets.DEPLOY_ALLURE_PAGES }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: allure-report
         publish_dir: build/allure-history
           
