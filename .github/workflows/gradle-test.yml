@@ -47,7 +47,7 @@ jobs:
     
     - name: Allure Report Generation
       if: always()
-      uses: simple-elf/allure-report-action@v1.6
+      uses: simple-elf/allure-report-action@v1.9
       with:
         gh_pages: build/allure-report-pages
         allure_results: build/allure-results
@@ -56,11 +56,10 @@ jobs:
         
     - name: Deploy report to Github Pages
       if: always()
-      uses: peaceiris/actions-gh-pages@v2
+      uses: peaceiris/actions-github-pages@v3.1.12
       env:
-        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        PUBLISH_BRANCH: allure-report
-        PUBLISH_DIR: build/allure-history
+        publish_branch: allure-report
+        publish_dir: build/allure-history
           
           
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
