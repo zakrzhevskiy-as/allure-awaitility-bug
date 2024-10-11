@@ -60,7 +60,7 @@ jobs:
       env:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       with:
-        deploy_key: ${{ secrets.GITHUB_TOKEN }}
+        deploy_key: ${{ secrets.DEPLOY_ALLURE_PAGES }}
         publish_branch: allure-report
         publish_dir: build/allure-history
           
